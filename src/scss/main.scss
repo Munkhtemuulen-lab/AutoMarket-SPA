@@ -1,0 +1,46 @@
+
+$ink: #101b2b;
+$navy: #111e30;
+$gold: #dc9e4e;
+$cream: #f7f7f5;
+
+:root {
+  --ink: #101b2b;
+  --gold: #dc9e4e;
+  --muted: #77808d;
+  --border: #e4e8ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, 'Segoe UI', Arial, sans-serif;
+  color: $ink;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 28px;
+  margin: 0 auto;
+}

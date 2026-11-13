@@ -1,0 +1,1 @@
+import {renderPageLayout} from '../layouts/pageLayout.js';import {t} from '../i18n/i18n.js';export function renderNotFoundPage(){document.querySelector('#app').innerHTML=renderPageLayout({title:'404',content:`<div class="empty"><h2>PAGE NOT FOUND</h2><a href="#/overview" class="primary-btn">${t('back')} ↗</a></div>`})}

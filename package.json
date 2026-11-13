@@ -1,0 +1,14 @@
+{
+  "name": "automarket-spa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch src/scss/main.scss src/css/main.css",
+    "build:css": "sass src/scss/main.scss src/css/main.css"
+  },
+  "devDependencies": {
+    "bulma": "^1.0.4",
+    "sass": "^1.98.0"
+  }
+}
