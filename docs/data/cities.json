@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ulaanbaatar",
+    "nameMn": "Улаанбаатар",
+    "nameEn": "Ulaanbaatar",
+    "label": "UB",
+    "x": 69,
+    "y": 65
+  },
+  {
+    "id": "darkhan",
+    "nameMn": "Дархан",
+    "nameEn": "Darkhan",
+    "label": "DK",
+    "x": 55,
+    "y": 31
+  },
+  {
+    "id": "erdenet",
+    "nameMn": "Эрдэнэт",
+    "nameEn": "Erdenet",
+    "label": "ET",
+    "x": 38,
+    "y": 45
+  }
+]

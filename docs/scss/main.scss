@@ -14,3 +14,51 @@ $ink:#101b2b;$navy:#111e30;$gold:#dc9e4e;$cream:#f7f7f5;
 .image-modal { position:relative; background:#fff; max-width:900px; width:100%; padding:18px; box-shadow:0 20px 60px #0005; }
 .image-modal img { display:block; max-width:100%; max-height:75vh; width:auto; margin:auto; object-fit:contain; }
 .image-modal p { font-weight:750; text-align:center; margin:12px 0 2px; }
+
+
+/* Chapters 2.10–2.13: overview, locations, loan breakdown, guides, footer */
+.overview-notes{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding-top:50px;padding-bottom:50px}
+.overview-notes h2{font-size:clamp(26px,3vw,38px);letter-spacing:-1px;margin:10px 0}
+.overview-notes p{color:#718091;line-height:1.8;margin:0}
+.location-section{padding:65px 0 85px;background:#f6f7f8}
+.location-section .section-heading h2{font-size:33px;letter-spacing:-1.2px;margin:0 0 8px}
+.location-section .section-heading p{color:#7f8a97;margin:0}
+.location-layout{display:grid;grid-template-columns:1.6fr 1fr;gap:25px}
+.location-diagram{min-height:335px;border-radius:4px;background:radial-gradient(circle at 58% 45%,#dbe5e9,#c9d3dc);position:relative;overflow:hidden}
+.location-grid-lines{position:absolute;inset:0;opacity:.22;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:42px 42px}
+.location-diagram-caption{position:absolute;left:22px;top:18px;color:#496073;font-size:11px;font-weight:800;max-width:250px}
+.city-dot{position:absolute;transform:translate(-50%,-50%);border:0;background:transparent;display:flex;flex-direction:column;align-items:center;gap:5px;color:#17273a;font-weight:800;font-size:12px;cursor:pointer;z-index:1}
+.city-marker{display:block;width:17px;height:17px;border:4px solid #fff;border-radius:100%;background:#cb8f43;box-shadow:0 3px 9px #15253655;transition:transform .2s}
+.city-dot.selected .city-marker,.city-dot:hover .city-marker{transform:scale(1.5);background:#13283c}
+.city-name{padding:5px 8px;background:#fffdf5e8;border-radius:3px;white-space:nowrap}
+.location-info{background:#fff;padding:40px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.location-info h3{font-size:30px;margin:15px 0 18px}
+.location-info p{color:#718091;line-height:1.65}
+.location-info strong{font-size:22px;color:#111e30}
+.location-note{color:#80909d;font-size:11px;margin:15px 0 0}
+.calc-info{line-height:1.7;font-size:12px;color:#647485;background:#f4f6f7;padding:12px 15px}
+.calc-info strong{color:#15293d}
+.calc-breakdown{border:1px solid #e4e8ec;margin-top:25px;padding:25px 30px}
+.calc-breakdown h3{font-size:19px;margin-bottom:18px}
+.calc-breakdown table{border-collapse:collapse;width:100%;font-size:13px}
+.calc-breakdown th,.calc-breakdown td{padding:14px 5px;border-bottom:1px solid #edf0f3}
+.calc-breakdown th{text-align:left;font-weight:500;color:#788594}
+.calc-breakdown td{text-align:right;font-weight:850;font-variant-numeric:tabular-nums}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.guide-card{padding:30px;border:1px solid #e2e7ed;min-height:235px;display:flex;flex-direction:column;align-items:flex-start}
+.guide-card h3{font-size:20px;line-height:1.4;margin:25px 0 auto}
+.guide-card .outline-btn{margin-top:30px}
+.guide-icon{font-size:32px;color:#c68f48}
+.guide-modal{position:relative;background:#fff;padding:45px;max-width:560px;width:100%;box-shadow:0 25px 60px #0003}
+.guide-modal h2{font-size:27px;margin:18px 0}
+.guide-modal p{font-size:15px;color:#586777;line-height:1.9;margin-bottom:30px}
+.footer-complete{display:grid;grid-template-columns:1.4fr .8fr 1fr;gap:50px;padding:20px 0 50px}
+.footer-brand b{font-size:23px}
+.footer-brand small,.footer-note p{display:block;color:#a9b8c5;font-size:12px;line-height:1.8;margin-top:18px}
+.footer-nav{display:flex;flex-direction:column;gap:13px}
+.footer-nav strong,.footer-note strong{font-size:13px;margin-bottom:9px}
+.footer-nav a{font-size:12px;color:#b8c7d4}
+.footer-nav a:hover,.footer-bottom a:hover{color:#dc9e4e}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #ffffff25;padding-top:25px;font-size:11px;color:#a4b4c1}
+@media(max-width:760px){.overview-notes,.location-layout{grid-template-columns:1fr}.location-diagram{min-height:300px}.guide-grid{grid-template-columns:1fr 1fr}.footer-complete{grid-template-columns:1fr 1fr;gap:30px}.footer-note{grid-column:1/-1}}
+@media(max-width:520px){.guide-grid,.footer-complete{grid-template-columns:1fr}.footer-note{grid-column:auto}.location-info{padding:28px}.guide-modal{padding:30px}.footer-bottom{flex-direction:column}}

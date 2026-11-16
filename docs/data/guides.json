@@ -1,0 +1,26 @@
+[
+  {
+    "id": "inspection",
+    "icon": "✓",
+    "titleMn": "Худалдан авахын өмнө шалгах зүйлс",
+    "titleEn": "Before-you-buy checklist",
+    "bodyMn": "Гэрчилгээ, арлын дугаар, гүйлтийн мэдээлэл, хөдөлгүүр, хурдны хайрцаг, кузов, ослын түүхийг шалгана. Боломжтой бол мэргэжлийн оношилгоо хийлгэнэ.",
+    "bodyEn": "Check registration, VIN, mileage, engine, transmission, bodywork and accident history. Arrange an independent inspection where possible."
+  },
+  {
+    "id": "finance",
+    "icon": "₮",
+    "titleMn": "Лизингийн тооцооллыг ойлгох",
+    "titleEn": "Understanding auto financing",
+    "bodyMn": "Урьдчилгаа, сарын хүү, хугацаа болон нийт хүүгийн зардлыг зэрэг харьцуулна. Тооцоолуурын үзүүлэлт нь зөвхөн жишээ.",
+    "bodyEn": "Compare down payment, monthly rate, term and total interest together. Calculator figures are estimates only."
+  },
+  {
+    "id": "listing",
+    "icon": "▤",
+    "titleMn": "Зар зөв оруулах зөвлөмж",
+    "titleEn": "Writing a good listing",
+    "bodyMn": "Марк, загвар, он, бодит гүйлт, түлшний төрөл, үнэ, тодорхой тайлбар болон машиныг тод харуулсан зургуудыг оруулна.",
+    "bodyEn": "Include make, model, year, actual mileage, fuel type, price, a clear description and sharp, accurate photos."
+  }
+]

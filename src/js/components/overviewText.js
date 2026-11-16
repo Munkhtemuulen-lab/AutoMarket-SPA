@@ -1,13 +1,4 @@
-// Танилцуулгын текст хэсгийг дүрслэх
-
-import { getTxt } from "../services/txtService.js";
-
-export function renderOverviewText(lang = "en") {
-  return ` 
-    <div class="app-overview-text">   
-      <p class="app-txt">
-        ${getTxt(lang, "overviewText")}
-      </p>
-    </div> 
-  `;
+import {t} from '../i18n/i18n.js';
+export function renderOverviewText(){
+  return `<div class="overview-notes container"><div><span class="micro-heading">CARSHOP SPA / 2.10</span><h2>${t('overviewTextTitle')}</h2></div><p>${t('overviewTextBody')}</p></div>`;
 }
