@@ -16,3 +16,14 @@ export function getFavorites(){try{return JSON.parse(localStorage.getItem('autom
 export function toggleFavorite(id){const s=new Set(getFavorites());s.has(id)?s.delete(id):s.add(id);localStorage.setItem('automarket-favorites',JSON.stringify([...s]));return s.has(id)}
 export const money=n=>new Intl.NumberFormat('mn-MN').format(Number(n)||0)+' ₮';
 export const escapeHtml=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+// Өөрийн нэмсэн demo зарыг устгах (үндсэн заруудыг устгахгүй).
+export function deleteCar(id) {
+  const target = listCars().find(car => String(car.id) === String(id));
+  if (!target?.custom) return false;
+  const remaining = listCars().filter(car => car.custom && String(car.id) !== String(id));
+  localStorage.setItem('automarket-cars', JSON.stringify(remaining));
+  const favorites = getFavorites().filter(favoriteId => String(favoriteId) !== String(id));
+  localStorage.setItem('automarket-favorites', JSON.stringify(favorites));
+  return true;
+}

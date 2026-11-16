@@ -1,5 +1,3 @@
-export const DATA_MODE = "local"; // Дараа нь api болгож солино.
-export const LOCAL_NUTRITIONS_URL = "./data/nutritionsEnMn.json";
-
-export const API_BASE_URL = "https://example.com/api";
-export const API_NUTRITIONS_URL = `${API_BASE_URL}/nutritions`;
+// 2.6: Local static JSON endpoints; compatible with GitHub Pages /docs.
+export const DATA_URL = "./data/cars.json";
+export const IMAGES_URL = "./data/images.json";

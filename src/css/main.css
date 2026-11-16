@@ -1269,3 +1269,5 @@ h1, h2, h3, p {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.car-photo-btn{display:block;position:absolute;inset:0;border:0;background:transparent;width:100%;cursor:zoom-in;padding:0}.car-photo-btn img{width:107%;height:auto;position:absolute;left:-3%;bottom:3%;filter:drop-shadow(0 15px 7px #26374b30)}.delete-car-btn{display:block;width:100%;margin-top:15px;padding:12px;background:#fff;color:#d83b39;border:1px solid #d83b39;font-size:13px;font-weight:700;cursor:pointer}.delete-car-btn:hover{background:#d83b39;color:#fff}.image-modal{position:relative;background:#fff;max-width:900px;width:100%;padding:18px;box-shadow:0 20px 60px #0005}.image-modal img{display:block;max-width:100%;max-height:75vh;width:auto;margin:auto;object-fit:contain}.image-modal p{font-weight:750;text-align:center;margin:12px 0 2px}
